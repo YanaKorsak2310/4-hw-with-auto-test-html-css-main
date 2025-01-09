@@ -15,8 +15,8 @@
 body {
     font-family: "Inter", sans-serif; 
     color: #303030;
-    /* 📍 Минимальная ширина */ 
     min-width: 375px;
+        /* 📍 Минимальная ширина */ 
 }
 
 header {
@@ -70,7 +70,7 @@ header span {
 .about-section .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
 }
 
 select {
@@ -93,6 +93,7 @@ select:hover,
 
 .info-wrapper {
     display: flex;
+    gap: 50px;
 }
 
 .section-title {
@@ -221,6 +222,10 @@ footer {
     .main-section .wrapper {
         /* 📍 Свойства для расположения элементов и отступа между ними */
         gap: 60px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
 
     .main-image {
@@ -242,8 +247,8 @@ footer {
 @media screen and (max-width: 768px) {
     .info-wrapper {
         /* 📍 Свойства для расположения 2-x списков и отступа между ними */
-        display: flex;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     gap: 60px;
     }
 }
@@ -258,6 +263,7 @@ footer {
     .main-section .wrapper {
         /* 📍 Отступ между изображением и блоком с текстом */
         gap: 40px;
+        display: flex;
     }
 
     .main-title {
@@ -269,5 +275,6 @@ footer {
     .info-wrapper {
         /* 📍 Отступ между изображением и блоком с текстом */
         gap: 50px;
+        padding: 60px 20px 40px;
     }
 }
